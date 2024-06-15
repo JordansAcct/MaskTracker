@@ -7,6 +7,7 @@ This repository contains the source code and results of the MaskTracker project,
   - FINN-generated deployment package for cnv-1w1a
   - Python script 
   - Jupyter notebook (contains non-functional ALS thread)
+  - Modified face detect inference script (TODO)
   - img/
     - Example pictures
 
