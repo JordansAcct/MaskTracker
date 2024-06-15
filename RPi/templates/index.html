@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mask Severity Rating</title>
+	<meta charset="UTF-8">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<!-- <div class="value"><h1 align="middle">Number of people correctly wearing a mask: <span id=mask>0</span></h1></div>
+			<div class="value"><h1 align="middle">Number of people incorrectly wearing a mask: <span id=part_mask>0</span></h1></div>
+			<div class="value"><h1 align="middle">Number of people not wearing a mask: <span id=no_mask>0</span></h1></div> -->
+			<div class="value"><h2 align="middle">Number of people correctly wearing a mask: <span id=mask>0</span> | Number of people incorrectly wearing a mask: <span id=part_mask>0</span> | Number of people not wearing a mask: <span id=no_mask>0</span></h2></div>
+		</div>
+		<div class="centered">
+			<h1 align="middle">Severity Rating: <span id="number">0</span></h1>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var socket = io.connect('http://10.16.230.118:5000');
+
+		socket.on('mask_update', function(msg) {
+			document.getElementById('mask').innerText = msg.number;
+		});
+		socket.on('part_mask_update', function(msg) {
+			document.getElementById('part_mask').innerText = msg.number;
+		});
+		socket.on('no_mask_update', function(msg) {
+			document.getElementById('no_mask').innerText = msg.number;
+		});
+		socket.on('number_update', function(msg) {
+			document.getElementById('number').innerText = msg.number;
+		});
+	</script>
+</body>
+</html>
