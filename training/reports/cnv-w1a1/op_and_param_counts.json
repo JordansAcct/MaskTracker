@@ -1,0 +1,62 @@
+{
+  "Thresholding_rtl_0": {},
+  "ConvolutionInputGenerator_rtl_0": {},
+  "MVAU_hls_0": {
+    "op_mac_1bx8b": 1555200,
+    "param_weight_1b": 1728,
+    "param_threshold_32b": 64
+  },
+  "ConvolutionInputGenerator_rtl_1": {},
+  "MVAU_hls_1": {
+    "op_mac_1bx1b": 28901376,
+    "param_weight_1b": 36864,
+    "param_threshold_32b": 64
+  },
+  "StreamingMaxPool_hls_0": {},
+  "ConvolutionInputGenerator_rtl_2": {},
+  "MVAU_hls_2": {
+    "op_mac_1bx1b": 10616832,
+    "param_weight_1b": 73728,
+    "param_threshold_32b": 128
+  },
+  "ConvolutionInputGenerator_rtl_3": {},
+  "MVAU_hls_3": {
+    "op_mac_1bx1b": 14745600,
+    "param_weight_1b": 147456,
+    "param_threshold_32b": 128
+  },
+  "StreamingMaxPool_hls_1": {},
+  "ConvolutionInputGenerator_rtl_4": {},
+  "MVAU_hls_4": {
+    "op_mac_1bx1b": 2654208,
+    "param_weight_1b": 294912,
+    "param_threshold_32b": 256
+  },
+  "ConvolutionInputGenerator_rtl_5": {},
+  "MVAU_hls_5": {
+    "op_mac_1bx1b": 589824,
+    "param_weight_1b": 589824,
+    "param_threshold_32b": 256
+  },
+  "MVAU_hls_6": {
+    "op_mac_1bx1b": 131072,
+    "param_weight_1b": 131072,
+    "param_threshold_32b": 512
+  },
+  "MVAU_hls_7": {
+    "op_mac_1bx1b": 262144,
+    "param_weight_1b": 262144,
+    "param_threshold_32b": 512
+  },
+  "MVAU_hls_8": {
+    "op_mac_1bx1b": 1536,
+    "param_weight_1b": 1536
+  },
+  "LabelSelect_hls_0": {},
+  "total": {
+    "op_mac_1bx8b": 1555200.0,
+    "param_weight_1b": 1539264.0,
+    "param_threshold_32b": 1920.0,
+    "op_mac_1bx1b": 57902592.0
+  }
+}
