@@ -1,14 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
-
-
 # ------------ DEPENDENCIES AND UTILITIES --------------
-
-
-# In[23]:
-
 
 import sys
 sys.path.insert(0,'/home/xilinx/jupyter_notebooks/mask_tracker/caffe/distribute/python/')
