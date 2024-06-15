@@ -5,6 +5,8 @@
 
 import sys
 sys.path.insert(0,'/home/xilinx/jupyter_notebooks/mask_tracker/caffe/distribute/python/')
+sys.path.insert(0,'/home/xilinx/jupyter_notebooks/mask_tracker/caffe/python/')
+! export LD_LIBRARY_PATH="/home/xilinx/jupyter_notebooks/mask_tracker/caffe/distribute/lib"
 
 import os
 import time
